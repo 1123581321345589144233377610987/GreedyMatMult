@@ -27,7 +27,7 @@ def calc(d):
     #testing
     #for i in table:
      #   print(i)
-    #return(table[1][length-1])
+    return(table[1][length-1])
 '''
     for i in range(1,length):
         for j in range(1,length):
@@ -89,8 +89,22 @@ def greedy(d):
         middles.sort(key=lambda x: x.sortby, reverse=True)
     return cost
 
-
-d=[1,7,100,8,9,1]
+#works
+#d=[1,7,100,8,9,1]
 #d=[1,6,2,3,3]
+#d=[1,2,3,4,5]
+#d=[1,2,3,4,5,6]
+#d=[6,5,4,3,2,1]
+#d=[1,3,5,4,2]
+#d=[1,3,7,54]
+#d=[1,3,7,67]
+#d=[1,3,7,54,67,1]
+#d=[7,54,67,1]
+#d=[7,54,67]
+
+#problems
+#d=[3,7,54,67]
+
+d=[3,7,54,67]
 print(calc(d))
 print(greedy(d))
